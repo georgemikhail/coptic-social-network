@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coptic Social Network - Interface Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coptic-gold': '#D4AF37',
+                        'coptic-blue': '#1E40AF',
+                        'coptic-red': '#DC2626'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-coptic-blue">⛪ Coptic Social</h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="text-coptic-blue border-b-2 border-coptic-blue px-1 pt-1 pb-1 text-sm font-medium">Dashboard</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700 px-1 pt-1 pb-1 text-sm font-medium">Groups</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700 px-1 pt-1 pb-1 text-sm font-medium">Parishes</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700 px-1 pt-1 pb-1 text-sm font-medium">Events</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-coptic-gold text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-600">
+                        + Create Group
+                    </button>
+                    <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">Community Groups</h1>
+            <p class="mt-2 text-gray-600">Connect with fellow Coptic Orthodox Christians in your area and around the world</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="border-b border-gray-200 mb-6">
+            <nav class="-mb-px flex space-x-8">
+                <button class="border-b-2 border-coptic-blue text-coptic-blue py-2 px-1 text-sm font-medium">
+                    Discover Groups
+                </button>
+                <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 py-2 px-1 text-sm font-medium">
+                    My Groups (3)
+                </button>
+            </nav>
+        </div>
+
+        <!-- Search and Filters -->
+        <div class="mb-6 flex flex-col sm:flex-row gap-4">
+            <div class="flex-1">
+                <input type="text" placeholder="Search groups..." 
+                       class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-coptic-blue focus:border-transparent">
+            </div>
+            <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-coptic-blue">
+                <option>All Types</option>
+                <option>⛪ Ministry</option>
+                <option>🏛️ Committee</option>
+                <option>📚 Study</option>
+                <option>🙏 Prayer</option>
+                <option>🤝 Service</option>
+                <option>🎉 Social</option>
+            </select>
+            <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-coptic-blue">
+                <option>All Privacy</option>
+                <option>🌍 Public</option>
+                <option>⛪ Parish Only</option>
+                <option>🔒 Private</option>
+            </select>
+        </div>
+
+        <!-- Groups Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Group Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-32 bg-gradient-to-r from-coptic-blue to-blue-600"></div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-900">Youth Ministry</h3>
+                        <span class="text-2xl">⛪</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Connecting young Coptic Orthodox Christians for fellowship, service, and spiritual growth.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">🌍 Public</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Ministry</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">👥 24 members</span>
+                        <button class="bg-coptic-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-32 bg-gradient-to-r from-coptic-gold to-yellow-600"></div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-900">Choir Ministry</h3>
+                        <span class="text-2xl">🎵</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Praising God through traditional Coptic hymns and contemporary Christian music.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">⛪ Parish Only</span>
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Ministry</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">👥 18 members</span>
+                        <button class="bg-coptic-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-32 bg-gradient-to-r from-coptic-red to-red-600"></div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-900">Bible Study Group</h3>
+                        <span class="text-2xl">📚</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Weekly Bible study sessions exploring Orthodox theology and scripture interpretation.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">🌍 Public</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Study</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">👥 31 members</span>
+                        <button class="bg-coptic-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Card 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-32 bg-gradient-to-r from-purple-500 to-purple-700"></div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-900">Prayer Warriors</h3>
+                        <span class="text-2xl">🙏</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">United in prayer for our community, families, and global Coptic Orthodox Church.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">🔒 Private</span>
+                            <span class="bg-pink-100 text-pink-800 px-2 py-1 rounded-full text-xs font-medium">Prayer</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">👥 45 members</span>
+                        <button class="bg-gray-400 text-white px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed">
+                            Request to Join
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Card 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-32 bg-gradient-to-r from-green-500 to-green-700"></div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-900">Community Service</h3>
+                        <span class="text-2xl">🤝</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Serving our local community through charitable works and volunteer opportunities.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">🌍 Public</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">Service</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">👥 67 members</span>
+                        <button class="bg-coptic-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group Card 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                <div class="h-32 bg-gradient-to-r from-orange-500 to-orange-700"></div>
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-lg font-semibold text-gray-900">Young Families</h3>
+                        <span class="text-2xl">👨‍👩‍👧‍👦</span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4">Support and fellowship for young Coptic families raising children in the faith.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">⛪ Parish Only</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">Age-based</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">👥 29 members</span>
+                        <button class="bg-coptic-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700">
+                            Join Group
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="mt-8 text-center">
+            <button class="bg-white text-coptic-blue border border-coptic-blue px-6 py-3 rounded-lg font-medium hover:bg-coptic-blue hover:text-white transition-colors">
+                Load More Groups
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center text-gray-600">
+                <p class="mb-2">🙏 Built with love for the Coptic Orthodox Community</p>
+                <p class="text-sm">Connecting parishes, strengthening faith, building community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple interactivity for preview
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching
+            const tabs = document.querySelectorAll('nav button');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    tabs.forEach(t => {
+                        t.classList.remove('border-coptic-blue', 'text-coptic-blue');
+                        t.classList.add('border-transparent', 'text-gray-500');
+                    });
+                    this.classList.remove('border-transparent', 'text-gray-500');
+                    this.classList.add('border-coptic-blue', 'text-coptic-blue');
+                });
+            });
+
+            // Join button interactions
+            const joinButtons = document.querySelectorAll('button:not(.cursor-not-allowed)');
+            joinButtons.forEach(button => {
+                if (button.textContent.includes('Join')) {
+                    button.addEventListener('click', function() {
+                        if (this.textContent === 'Join Group') {
+                            this.textContent = 'Joined ✓';
+                            this.classList.remove('bg-coptic-blue', 'hover:bg-blue-700');
+                            this.classList.add('bg-green-600', 'hover:bg-green-700');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

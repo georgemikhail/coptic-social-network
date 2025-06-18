@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coptic Social Network - Dashboard Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coptic-gold': '#D4AF37',
+                        'coptic-blue': '#1E40AF',
+                        'coptic-red': '#DC2626'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-coptic-blue">⛪ Coptic Social</h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="text-coptic-blue border-b-2 border-coptic-blue px-1 pt-1 pb-1 text-sm font-medium">Dashboard</a>
+                        <a href="interface-preview.html" class="text-gray-500 hover:text-gray-700 px-1 pt-1 pb-1 text-sm font-medium">Groups</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700 px-1 pt-1 pb-1 text-sm font-medium">Parishes</a>
+                        <a href="#" class="text-gray-500 hover:text-gray-700 px-1 pt-1 pb-1 text-sm font-medium">Events</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-coptic-gold text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-yellow-600">
+                        + Create Group
+                    </button>
+                    <div class="w-8 h-8 bg-coptic-blue rounded-full flex items-center justify-center text-white font-bold">
+                        A
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Welcome Header -->
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">Welcome back, Admin! 🙏</h1>
+            <p class="mt-2 text-gray-600">May God bless your day. Here's what's happening in your community.</p>
+            <div class="mt-4 bg-gradient-to-r from-coptic-blue to-blue-600 text-white p-4 rounded-lg">
+                <p class="text-sm">📅 Today is the Feast of Saint Mary - Join us for special prayers at 7 PM</p>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-900 mb-4">Quick Actions</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <button class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <div class="text-3xl mb-2">👥</div>
+                    <div class="text-sm font-medium text-gray-900">Community Groups</div>
+                    <div class="text-xs text-gray-500">Manage your groups</div>
+                </button>
+                <button class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <div class="text-3xl mb-2">📅</div>
+                    <div class="text-sm font-medium text-gray-900">Parish Events</div>
+                    <div class="text-xs text-gray-500">View upcoming events</div>
+                </button>
+                <button class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <div class="text-3xl mb-2">🙏</div>
+                    <div class="text-sm font-medium text-gray-900">Prayer Requests</div>
+                    <div class="text-xs text-gray-500">Share and pray</div>
+                </button>
+                <button class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                    <div class="text-3xl mb-2">⛪</div>
+                    <div class="text-sm font-medium text-gray-900">Find Parishes</div>
+                    <div class="text-xs text-gray-500">Connect with parishes</div>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2">
+                <!-- My Groups -->
+                <div class="mb-8">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-semibold text-gray-900">My Groups</h2>
+                        <a href="interface-preview.html" class="text-coptic-blue hover:text-blue-700 text-sm font-medium">View all →</a>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-gray-900">Youth Ministry</h3>
+                                <span class="text-sm bg-red-100 text-red-800 px-2 py-1 rounded-full">Admin</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">24 members • 3 new posts</p>
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-coptic-blue text-white px-3 py-1 rounded text-xs">View</button>
+                                <button class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs">Manage</button>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <h3 class="font-semibold text-gray-900">Bible Study Group</h3>
+                                <span class="text-sm bg-gray-100 text-gray-800 px-2 py-1 rounded-full">Member</span>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">31 members • 1 new post</p>
+                            <div class="flex items-center space-x-2">
+                                <button class="bg-coptic-blue text-white px-3 py-1 rounded text-xs">View</button>
+                                <button class="bg-gray-100 text-gray-700 px-3 py-1 rounded text-xs">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="mb-8">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-4">Recent Activity</h2>
+                    <div class="bg-white rounded-lg shadow-md">
+                        <div class="p-4 border-b border-gray-200">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm">M</div>
+                                <div class="flex-1">
+                                    <p class="text-sm"><span class="font-medium">Mark Samir</span> posted in <span class="font-medium text-coptic-blue">Youth Ministry</span></p>
+                                    <p class="text-gray-600 text-sm mt-1">"Looking forward to our retreat next weekend! 🙏"</p>
+                                    <p class="text-gray-400 text-xs mt-2">2 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 border-b border-gray-200">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">S</div>
+                                <div class="flex-1">
+                                    <p class="text-sm"><span class="font-medium">Sarah Mikhail</span> joined <span class="font-medium text-coptic-blue">Prayer Warriors</span></p>
+                                    <p class="text-gray-400 text-xs mt-2">4 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm">F</div>
+                                <div class="flex-1">
+                                    <p class="text-sm"><span class="font-medium">Father Bishoy</span> shared an event in <span class="font-medium text-coptic-blue">St. Mary Parish</span></p>
+                                    <p class="text-gray-600 text-sm mt-1">"Special liturgy for the feast of Saint Mary"</p>
+                                    <p class="text-gray-400 text-xs mt-2">6 hours ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <!-- Parish Info -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Your Parish</h3>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-coptic-blue rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl">⛪</div>
+                        <h4 class="font-medium text-gray-900">St. Mary Coptic Orthodox Church</h4>
+                        <p class="text-gray-600 text-sm">Los Angeles, CA</p>
+                        <button class="mt-3 bg-coptic-gold text-white px-4 py-2 rounded-lg text-sm font-medium">View Parish</button>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Upcoming Events</h3>
+                    <div class="space-y-3">
+                        <div class="border-l-4 border-coptic-blue pl-3">
+                            <p class="font-medium text-sm">Feast of Saint Mary</p>
+                            <p class="text-gray-600 text-xs">Today, 7:00 PM</p>
+                        </div>
+                        <div class="border-l-4 border-coptic-gold pl-3">
+                            <p class="font-medium text-sm">Youth Retreat</p>
+                            <p class="text-gray-600 text-xs">This Weekend</p>
+                        </div>
+                        <div class="border-l-4 border-gray-300 pl-3">
+                            <p class="font-medium text-sm">Bible Study</p>
+                            <p class="text-gray-600 text-xs">Wednesday, 7:30 PM</p>
+                        </div>
+                    </div>
+                    <button class="mt-4 w-full bg-gray-100 text-gray-700 py-2 rounded-lg text-sm font-medium">View All Events</button>
+                </div>
+
+                <!-- Prayer Requests -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Prayer Requests</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-800">🙏 Please pray for my grandmother's health</p>
+                            <p class="text-xs text-gray-500 mt-1">- Anonymous</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-800">🙏 Prayers for our parish's new building project</p>
+                            <p class="text-xs text-gray-500 mt-1">- Father Bishoy</p>
+                        </div>
+                    </div>
+                    <button class="mt-4 w-full bg-coptic-blue text-white py-2 rounded-lg text-sm font-medium">Add Prayer Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center text-gray-600">
+                <p class="mb-2">🙏 Built with love for the Coptic Orthodox Community</p>
+                <p class="text-sm">Connecting parishes, strengthening faith, building community</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

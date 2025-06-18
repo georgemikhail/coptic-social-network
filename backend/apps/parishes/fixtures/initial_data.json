@@ -1,0 +1,163 @@
+[
+  {
+    "model": "parishes.diocese",
+    "pk": 1,
+    "fields": {
+      "name": "Diocese of Los Angeles and Southern California",
+      "description": "The Coptic Orthodox Diocese serving Southern California",
+      "bishop_name": "His Grace Bishop Serapion",
+      "bishop_title": "Bishop",
+      "address": "1001 N. Las Brisas Avenue, Anaheim, CA 92801",
+      "phone_number": "(714) 635-1590",
+      "email": "info@lacopts.org",
+      "website": "https://www.lacopts.org",
+      "country": "United States",
+      "state_province": "California",
+      "city": "Los Angeles",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "parishes.diocese",
+    "pk": 2,
+    "fields": {
+      "name": "Diocese of New York and New England",
+      "description": "The Coptic Orthodox Diocese serving the Northeastern United States",
+      "bishop_name": "His Grace Bishop David",
+      "bishop_title": "Bishop",
+      "address": "427 West Side Avenue, Jersey City, NJ 07304",
+      "phone_number": "(201) 333-0004",
+      "email": "info@suscopts.org",
+      "website": "https://www.suscopts.org",
+      "country": "United States",
+      "state_province": "New York",
+      "city": "New York",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "parishes.diocese",
+    "pk": 3,
+    "fields": {
+      "name": "Diocese of Sydney and its Affiliated Regions",
+      "description": "The Coptic Orthodox Diocese serving Australia and New Zealand",
+      "bishop_name": "His Grace Bishop Daniel",
+      "bishop_title": "Bishop",
+      "address": "188 Waterloo Road, Greenacre NSW 2190",
+      "phone_number": "+61 2 9796 5888",
+      "email": "info@copticchurch.com.au",
+      "website": "https://www.copticchurch.com.au",
+      "country": "Australia",
+      "state_province": "New South Wales",
+      "city": "Sydney",
+      "is_active": true,
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "parishes.parish",
+    "pk": 1,
+    "fields": {
+      "name": "St. Mark Coptic Orthodox Church",
+      "description": "A vibrant parish serving the Coptic Orthodox community in Los Angeles",
+      "diocese": 1,
+      "priest_name": "Fr. Antonious Henein",
+      "priest_title": "Father",
+      "address": "1001 N. Las Brisas Avenue, Anaheim, CA 92801",
+      "phone_number": "(714) 635-1590",
+      "email": "stmark@lacopts.org",
+      "website": "https://stmarkla.org",
+      "service_schedule": {
+        "sunday": ["9:00 AM - Divine Liturgy", "6:00 PM - Vespers"],
+        "wednesday": ["7:00 PM - Bible Study"],
+        "friday": ["7:00 PM - Praise & Worship"]
+      },
+      "facebook_page": "https://facebook.com/stmarkla",
+      "youtube_channel": "https://youtube.com/stmarkla",
+      "latitude": "33.8366",
+      "longitude": "-117.9147",
+      "timezone": "America/Los_Angeles",
+      "is_active": true,
+      "allow_public_posts": true,
+      "allow_member_posts": true,
+      "require_admin_approval": false,
+      "enable_donations": true,
+      "donation_goal": "50000.00",
+      "donation_description": "Building Fund for New Sanctuary",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "parishes.parish",
+    "pk": 2,
+    "fields": {
+      "name": "St. Mary and St. Athanasius Coptic Orthodox Church",
+      "description": "Serving the Coptic Orthodox faithful in New Jersey",
+      "diocese": 2,
+      "priest_name": "Fr. Boutros Boutros",
+      "priest_title": "Father",
+      "address": "427 West Side Avenue, Jersey City, NJ 07304",
+      "phone_number": "(201) 333-0004",
+      "email": "stmary@suscopts.org",
+      "website": "https://stmarynj.org",
+      "service_schedule": {
+        "sunday": ["9:30 AM - Divine Liturgy"],
+        "tuesday": ["7:00 PM - Prayer Meeting"],
+        "friday": ["7:30 PM - Youth Meeting"]
+      },
+      "facebook_page": "https://facebook.com/stmarynj",
+      "latitude": "40.7282",
+      "longitude": "-74.0776",
+      "timezone": "America/New_York",
+      "is_active": true,
+      "allow_public_posts": true,
+      "allow_member_posts": true,
+      "require_admin_approval": false,
+      "enable_donations": true,
+      "donation_goal": "25000.00",
+      "donation_description": "Annual Operating Fund",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "parishes.parish",
+    "pk": 3,
+    "fields": {
+      "name": "St. Mary and St. Mina Coptic Orthodox Church",
+      "description": "The mother church of the Coptic Orthodox community in Sydney",
+      "diocese": 3,
+      "priest_name": "Fr. Antonious Kaldas",
+      "priest_title": "Father",
+      "address": "188 Waterloo Road, Greenacre NSW 2190",
+      "phone_number": "+61 2 9796 5888",
+      "email": "stmary@copticchurch.com.au",
+      "website": "https://stmarysydney.org.au",
+      "service_schedule": {
+        "sunday": ["8:00 AM - Divine Liturgy", "5:00 PM - Evening Prayer"],
+        "wednesday": ["7:00 PM - Bible Study"],
+        "saturday": ["6:00 PM - Vespers"]
+      },
+      "facebook_page": "https://facebook.com/stmarysydney",
+      "youtube_channel": "https://youtube.com/stmarysydney",
+      "latitude": "-33.9173",
+      "longitude": "151.0544",
+      "timezone": "Australia/Sydney",
+      "is_active": true,
+      "allow_public_posts": true,
+      "allow_member_posts": true,
+      "require_admin_approval": false,
+      "enable_donations": true,
+      "donation_goal": "75000.00",
+      "donation_description": "Church Renovation Project",
+      "created_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2024-01-01T00:00:00Z"
+    }
+  }
+] 

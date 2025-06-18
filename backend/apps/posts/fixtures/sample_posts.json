@@ -1,0 +1,102 @@
+[
+  {
+    "model": "posts.post",
+    "pk": "550e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "author": 1,
+      "content": "Welcome to our new parish social platform! We're excited to connect our community in this digital space. May God bless our online fellowship. ✝️",
+      "post_type": "announcement",
+      "visibility": "parish_only",
+      "target_parish": 1,
+      "is_announcement": true,
+      "is_pinned": true,
+      "is_approved": true,
+      "likes_count": 12,
+      "comments_count": 5,
+      "shares_count": 3,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z",
+      "published_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": "550e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "author": 2,
+      "content": "Join us this Sunday for our special service celebrating the Feast of the Cross. Service starts at 9:00 AM. Let's come together in prayer and worship. 🙏",
+      "post_type": "event",
+      "visibility": "parish_only",
+      "target_parish": 1,
+      "is_announcement": false,
+      "is_pinned": false,
+      "is_approved": true,
+      "likes_count": 8,
+      "comments_count": 3,
+      "shares_count": 2,
+      "created_at": "2024-01-14T14:30:00Z",
+      "updated_at": "2024-01-14T14:30:00Z",
+      "published_at": "2024-01-14T14:30:00Z"
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": "550e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "author": 1,
+      "content": "Thank you to everyone who participated in our youth Bible study session yesterday. The discussion about faith in modern times was truly inspiring. Looking forward to next week!",
+      "post_type": "text",
+      "visibility": "parish_only",
+      "target_parish": 1,
+      "is_announcement": false,
+      "is_pinned": false,
+      "is_approved": true,
+      "likes_count": 15,
+      "comments_count": 7,
+      "shares_count": 1,
+      "created_at": "2024-01-13T18:45:00Z",
+      "updated_at": "2024-01-13T18:45:00Z",
+      "published_at": "2024-01-13T18:45:00Z"
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": "550e8400-e29b-41d4-a716-446655440004",
+    "fields": {
+      "author": 3,
+      "content": "Our parish charity drive was a huge success! We collected over 500 items for local families in need. God bless everyone who contributed. Your generosity shows the love of Christ in action. ❤️",
+      "post_type": "text",
+      "visibility": "parish_only",
+      "target_parish": 2,
+      "is_announcement": false,
+      "is_pinned": false,
+      "is_approved": true,
+      "likes_count": 23,
+      "comments_count": 12,
+      "shares_count": 5,
+      "created_at": "2024-01-12T16:20:00Z",
+      "updated_at": "2024-01-12T16:20:00Z",
+      "published_at": "2024-01-12T16:20:00Z"
+    }
+  },
+  {
+    "model": "posts.post",
+    "pk": "550e8400-e29b-41d4-a716-446655440005",
+    "fields": {
+      "author": 2,
+      "content": "Reminder: Parish council meeting this Wednesday at 7 PM in the community hall. We'll be discussing upcoming events and budget allocations. All members welcome to attend.",
+      "post_type": "announcement",
+      "visibility": "parish_only",
+      "target_parish": 1,
+      "is_announcement": true,
+      "is_pinned": false,
+      "is_approved": true,
+      "likes_count": 6,
+      "comments_count": 2,
+      "shares_count": 4,
+      "created_at": "2024-01-11T11:15:00Z",
+      "updated_at": "2024-01-11T11:15:00Z",
+      "published_at": "2024-01-11T11:15:00Z"
+    }
+  }
+] 

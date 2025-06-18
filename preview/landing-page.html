@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coptic Social - Connect. Share. Grow in Faith.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'coptic-gold': '#D4AF37',
+                        'coptic-blue': '#1E40AF',
+                        'coptic-red': '#DC2626'
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-coptic-blue">⛪ Coptic Social</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-coptic-blue transition-colors">Features</a>
+                    <a href="#community" class="text-gray-700 hover:text-coptic-blue transition-colors">Community</a>
+                    <a href="#parishes" class="text-gray-700 hover:text-coptic-blue transition-colors">Parishes</a>
+                    <button class="bg-coptic-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Sign In
+                    </button>
+                    <button class="bg-coptic-gold text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors">
+                        Join Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-coptic-blue via-blue-600 to-blue-800 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in-up">
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Connect with the
+                        <span class="text-coptic-gold">Global Coptic</span>
+                        Community
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                        Join thousands of Coptic Orthodox Christians worldwide. Share your faith journey, 
+                        connect with your parish, and strengthen your spiritual community.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-coptic-gold text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition-all transform hover:scale-105 shadow-lg">
+                            🙏 Join Our Community
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-coptic-blue transition-all">
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div class="flex items-center mt-8 space-x-6 text-blue-200">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">👥</span>
+                            <span>15,000+ Members</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">⛪</span>
+                            <span>200+ Parishes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">🌍</span>
+                            <span>50+ Countries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-fade-in relative">
+                    <div class="relative z-10 bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-12 h-12 bg-coptic-blue rounded-full flex items-center justify-center text-white font-bold">
+                                M
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Mark Samir</h3>
+                                <p class="text-gray-500 text-sm">St. Mary Parish, Los Angeles</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4">
+                            "Coptic Social has transformed how our parish connects. From organizing youth retreats 
+                            to sharing prayer requests, it's brought our community closer together. 🙏"
+                        </p>
+                        <div class="flex items-center space-x-1">
+                            <span class="text-coptic-gold">★★★★★</span>
+                            <span class="text-gray-500 text-sm ml-2">5.0 • 2,847 reviews</span>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4 w-full h-full bg-coptic-gold rounded-2xl opacity-20"></div>
+                    <div class="absolute top-8 left-8 w-full h-full bg-coptic-red rounded-2xl opacity-10"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-bottom">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16 fill-white">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="py-12 bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <p class="text-gray-600 text-lg">Trusted by Coptic Orthodox communities worldwide</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+                <div class="text-center">
+                    <div class="text-3xl mb-2">⛪</div>
+                    <p class="text-sm font-medium text-gray-700">St. Mary's Cathedral</p>
+                    <p class="text-xs text-gray-500">Los Angeles</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">⛪</div>
+                    <p class="text-sm font-medium text-gray-700">St. Mark's Church</p>
+                    <p class="text-xs text-gray-500">New York</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">⛪</div>
+                    <p class="text-sm font-medium text-gray-700">St. George's Parish</p>
+                    <p class="text-xs text-gray-500">Sydney</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">⛪</div>
+                    <p class="text-sm font-medium text-gray-700">Holy Family Church</p>
+                    <p class="text-xs text-gray-500">Toronto</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Everything You Need for Spiritual Community</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Built specifically for the Coptic Orthodox Church, with features that respect our traditions 
+                    while embracing modern technology.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-coptic-blue rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl text-white">👥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Community Groups</h3>
+                    <p class="text-gray-600 mb-4">
+                        Join ministries, Bible study groups, youth organizations, and prayer circles. 
+                        Connect with like-minded believers in your parish and beyond.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>✓ Youth & Young Adult Ministries</li>
+                        <li>✓ Bible Study & Prayer Groups</li>
+                        <li>✓ Service & Outreach Teams</li>
+                        <li>✓ Choir & Music Ministries</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-coptic-gold rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl text-white">⛪</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Parish Connection</h3>
+                    <p class="text-gray-600 mb-4">
+                        Stay connected with your home parish and discover Coptic churches worldwide. 
+                        Never miss important announcements or events.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>✓ Parish Directory & Events</li>
+                        <li>✓ Liturgy & Service Times</li>
+                        <li>✓ Announcements & News</li>
+                        <li>✓ Global Parish Network</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-coptic-red rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl text-white">🙏</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Prayer & Spiritual Growth</h3>
+                    <p class="text-gray-600 mb-4">
+                        Share prayer requests, join in intercession, and grow spiritually with daily 
+                        readings, feast day reminders, and Orthodox resources.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>✓ Prayer Request Sharing</li>
+                        <li>✓ Daily Readings & Reflections</li>
+                        <li>✓ Feast Day Notifications</li>
+                        <li>✓ Orthodox Resources</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl text-white">📅</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Events & Activities</h3>
+                    <p class="text-gray-600 mb-4">
+                        Discover and organize parish events, retreats, conferences, and social gatherings. 
+                        Never miss what's happening in your community.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>✓ Event Discovery & RSVP</li>
+                        <li>✓ Retreat & Conference Info</li>
+                        <li>✓ Social Gatherings</li>
+                        <li>✓ Calendar Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl text-white">💬</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Safe Communication</h3>
+                    <p class="text-gray-600 mb-4">
+                        Connect safely with moderated discussions, private messaging, and 
+                        community guidelines that reflect our Christian values.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>✓ Moderated Discussions</li>
+                        <li>✓ Private Messaging</li>
+                        <li>✓ Christian Community Guidelines</li>
+                        <li>✓ Safe Space for All Ages</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow group">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="text-3xl text-white">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Global Reach</h3>
+                    <p class="text-gray-600 mb-4">
+                        Connect with Coptic Orthodox Christians around the world. Share experiences, 
+                        learn from different cultures, and strengthen global unity.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>✓ Global Community Network</li>
+                        <li>✓ Cultural Exchange</li>
+                        <li>✓ Multi-language Support</li>
+                        <li>✓ International Events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Join Thousands of Believers Worldwide</h2>
+                <p class="text-lg text-gray-600">See how Coptic Social is transforming communities</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Social Proof 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-r from-coptic-blue to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-3xl text-white">📈</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Growing Daily</h3>
+                    <p class="text-gray-600">Over 500 new members join our community every month, creating stronger connections across parishes worldwide.</p>
+                </div>
+
+                <!-- Social Proof 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-r from-coptic-gold to-yellow-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-3xl text-white">🤝</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Active Communities</h3>
+                    <p class="text-gray-600">1,500+ active community groups organizing events, sharing prayers, and building lasting friendships.</p>
+                </div>
+
+                <!-- Social Proof 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-r from-coptic-red to-red-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <span class="text-3xl text-white">🌟</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Highly Rated</h3>
+                    <p class="text-gray-600">4.9/5 star rating from our community members who love connecting through our platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stats -->
+    <section class="py-20 bg-coptic-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Join a Thriving Community</h2>
+                <p class="text-xl text-blue-100">
+                    Thousands of Coptic Orthodox Christians are already connecting and growing together
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="animate-pulse-slow">
+                    <div class="text-4xl font-bold text-coptic-gold mb-2">15,000+</div>
+                    <div class="text-blue-200">Active Members</div>
+                </div>
+                <div class="animate-pulse-slow" style="animation-delay: 0.2s">
+                    <div class="text-4xl font-bold text-coptic-gold mb-2">200+</div>
+                    <div class="text-blue-200">Connected Parishes</div>
+                </div>
+                <div class="animate-pulse-slow" style="animation-delay: 0.4s">
+                    <div class="text-4xl font-bold text-coptic-gold mb-2">1,500+</div>
+                    <div class="text-blue-200">Community Groups</div>
+                </div>
+                <div class="animate-pulse-slow" style="animation-delay: 0.6s">
+                    <div class="text-4xl font-bold text-coptic-gold mb-2">50+</div>
+                    <div class="text-blue-200">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="community" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Community Says</h2>
+                <p class="text-xl text-gray-600">
+                    Real stories from real people in our Coptic Orthodox community
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-colors">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-coptic-blue rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Sarah Mikhail</h4>
+                            <p class="text-gray-500 text-sm">Youth Leader, St. Mark's NYC</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "As a youth leader, Coptic Social has been incredible for organizing events and 
+                        keeping our young adults engaged. The prayer request feature has brought us 
+                        closer as a community."
+                    </p>
+                    <div class="text-coptic-gold">★★★★★</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-colors">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-coptic-gold rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            F
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Father Bishoy</h4>
+                            <p class="text-gray-500 text-sm">Priest, St. Mary's LA</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "This platform has revolutionized how we communicate with our parish. From 
+                        announcing liturgy times to organizing community service, it's become essential 
+                        for parish life."
+                    </p>
+                    <div class="text-coptic-gold">★★★★★</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 hover:bg-gray-100 transition-colors">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-coptic-red rounded-full flex items-center justify-center text-white font-bold mr-4">
+                            M
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Mina Hanna</h4>
+                            <p class="text-gray-500 text-sm">University Student, Sydney</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Being away from home for university, Coptic Social helped me find and connect 
+                        with the local Coptic community in Sydney. I've made lifelong friendships through 
+                        the Bible study groups."
+                    </p>
+                    <div class="text-coptic-gold">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-coptic-gold to-yellow-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Join Our Community?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Connect with thousands of Coptic Orthodox Christians worldwide. 
+                Your spiritual journey starts here.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button class="bg-white text-coptic-gold px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
+                    🙏 Create Free Account
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-coptic-gold transition-all">
+                    Learn More
+                </button>
+            </div>
+            <div class="flex items-center justify-center space-x-6 text-sm opacity-75">
+                <span>✓ Free forever</span>
+                <span>✓ No ads</span>
+                <span>✓ Built for the Coptic Orthodox Church</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-2xl font-bold text-coptic-gold mb-4">⛪ Coptic Social</div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Connecting the global Coptic Orthodox community through faith, fellowship, and modern technology. 
+                        Built with love for our church family worldwide.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="w-10 h-10 bg-coptic-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            f
+                        </button>
+                        <button class="w-10 h-10 bg-coptic-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            t
+                        </button>
+                        <button class="w-10 h-10 bg-coptic-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            i
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Community</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Find Parishes</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Join Groups</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Events</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Prayer Requests</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Coptic Social. Built with 🙏 for the Coptic Orthodox Church worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white', 'shadow-lg');
+                nav.classList.remove('bg-white/95');
+            } else {
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white', 'shadow-lg');
+            }
+        });
+
+        // Animate stats on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards
+        document.querySelectorAll('.group').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Add click handlers for CTA buttons
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Join') || button.textContent.includes('Create')) {
+                button.addEventListener('click', function() {
+                    alert('🎉 Welcome to Coptic Social! Registration will be available when the site goes live.');
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

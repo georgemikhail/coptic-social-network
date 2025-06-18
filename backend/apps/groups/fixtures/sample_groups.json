@@ -1,0 +1,210 @@
+[
+  {
+    "model": "groups.group",
+    "pk": "550e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "name": "Youth Ministry",
+      "description": "A vibrant community for young adults to grow in faith, fellowship, and service.",
+      "group_type": "ministry",
+      "privacy": "parish_only",
+      "parish": 1,
+      "created_by": 2,
+      "is_active": true,
+      "is_featured": true,
+      "allow_member_posts": true,
+      "require_approval": false,
+      "member_count": 1,
+      "post_count": 1,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-20T15:30:00Z"
+    }
+  },
+  {
+    "model": "groups.group",
+    "pk": "550e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "name": "Choir Ministry",
+      "description": "Our parish choir dedicated to praising God through beautiful hymns and songs.",
+      "group_type": "ministry",
+      "privacy": "parish_only",
+      "parish": 1,
+      "created_by": 3,
+      "is_active": true,
+      "is_featured": true,
+      "allow_member_posts": true,
+      "require_approval": true,
+      "member_count": 1,
+      "post_count": 1,
+      "created_at": "2024-01-10T14:00:00Z",
+      "updated_at": "2024-01-18T12:00:00Z"
+    }
+  },
+  {
+    "model": "groups.group",
+    "pk": "550e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "name": "Bible Study Group",
+      "description": "Weekly Bible study sessions where we dive deep into Scripture and grow together.",
+      "group_type": "study",
+      "privacy": "parish_only",
+      "parish": 2,
+      "created_by": 3,
+      "is_active": true,
+      "is_featured": true,
+      "allow_member_posts": true,
+      "require_approval": false,
+      "member_count": 1,
+      "post_count": 1,
+      "created_at": "2024-01-12T19:00:00Z",
+      "updated_at": "2024-01-24T20:15:00Z"
+    }
+  },
+  {
+    "model": "groups.group",
+    "pk": "550e8400-e29b-41d4-a716-446655440004",
+    "fields": {
+      "name": "Prayer Warriors",
+      "description": "A dedicated group committed to intercessory prayer for our parish and community.",
+      "group_type": "prayer",
+      "privacy": "parish_only",
+      "parish": 3,
+      "created_by": 4,
+      "is_active": true,
+      "is_featured": true,
+      "allow_member_posts": true,
+      "require_approval": false,
+      "member_count": 1,
+      "post_count": 1,
+      "created_at": "2024-01-14T18:00:00Z",
+      "updated_at": "2024-01-23T19:30:00Z"
+    }
+  },
+  {
+    "model": "groups.groupmembership",
+    "pk": "660e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440001",
+      "user": 2,
+      "role": "admin",
+      "is_active": true,
+      "notifications_enabled": true,
+      "joined_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "groups.groupmembership",
+    "pk": "660e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440002",
+      "user": 3,
+      "role": "admin",
+      "is_active": true,
+      "notifications_enabled": true,
+      "joined_at": "2024-01-10T14:00:00Z",
+      "updated_at": "2024-01-10T14:00:00Z"
+    }
+  },
+  {
+    "model": "groups.groupmembership",
+    "pk": "660e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440003",
+      "user": 3,
+      "role": "admin",
+      "is_active": true,
+      "notifications_enabled": true,
+      "joined_at": "2024-01-12T19:00:00Z",
+      "updated_at": "2024-01-12T19:00:00Z"
+    }
+  },
+  {
+    "model": "groups.groupmembership",
+    "pk": "660e8400-e29b-41d4-a716-446655440004",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440004",
+      "user": 4,
+      "role": "admin",
+      "is_active": true,
+      "notifications_enabled": true,
+      "joined_at": "2024-01-14T18:00:00Z",
+      "updated_at": "2024-01-14T18:00:00Z"
+    }
+  },
+  {
+    "model": "groups.grouppost",
+    "pk": "770e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440001",
+      "author": 2,
+      "title": "Welcome to Youth Ministry!",
+      "content": "Welcome everyone to our Youth Ministry group! 🙏✨ We're excited to have you join our community of young believers. Here you'll find updates about our weekly Bible studies, upcoming events, and opportunities to serve together. Let's grow in faith and fellowship!",
+      "is_announcement": true,
+      "is_pinned": true,
+      "is_approved": true,
+      "is_deleted": false,
+      "likes_count": 5,
+      "comments_count": 3,
+      "created_at": "2024-01-15T10:30:00Z",
+      "updated_at": "2024-01-15T10:30:00Z",
+      "published_at": "2024-01-15T10:30:00Z"
+    }
+  },
+  {
+    "model": "groups.grouppost",
+    "pk": "770e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440002",
+      "author": 3,
+      "title": "Choir Practice Schedule",
+      "content": "Dear choir members, our weekly practice is every Thursday at 7 PM in the parish hall. We're preparing beautiful hymns for the upcoming feast celebration. Please practice the hymns we distributed last week. God bless! 🎵✝️",
+      "is_announcement": true,
+      "is_pinned": false,
+      "is_approved": true,
+      "is_deleted": false,
+      "likes_count": 8,
+      "comments_count": 2,
+      "created_at": "2024-01-18T11:00:00Z",
+      "updated_at": "2024-01-18T11:00:00Z",
+      "published_at": "2024-01-18T11:00:00Z"
+    }
+  },
+  {
+    "model": "groups.grouppost",
+    "pk": "770e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440003",
+      "author": 3,
+      "title": "This Week's Study: The Parable of the Sower",
+      "content": "Join us this Thursday at 7 PM as we study the Parable of the Sower (Matthew 13:1-23). We'll explore the different types of soil and what they represent in our spiritual lives. Bring your Bibles and an open heart! 🌱📖",
+      "is_announcement": false,
+      "is_pinned": false,
+      "is_approved": true,
+      "is_deleted": false,
+      "likes_count": 6,
+      "comments_count": 4,
+      "created_at": "2024-01-24T20:30:00Z",
+      "updated_at": "2024-01-24T20:30:00Z",
+      "published_at": "2024-01-24T20:30:00Z"
+    }
+  },
+  {
+    "model": "groups.grouppost",
+    "pk": "770e8400-e29b-41d4-a716-446655440004",
+    "fields": {
+      "group": "550e8400-e29b-41d4-a716-446655440004",
+      "author": 4,
+      "title": "Prayer Request: Community Healing",
+      "content": "Dear prayer warriors, let us lift up our community in prayer during these challenging times. Please pray for healing, unity, and God's peace to reign in our hearts and homes. 'The prayer of a righteous person is powerful and effective.' - James 5:16 🙏❤️",
+      "is_announcement": false,
+      "is_pinned": true,
+      "is_approved": true,
+      "is_deleted": false,
+      "likes_count": 12,
+      "comments_count": 7,
+      "created_at": "2024-01-23T19:00:00Z",
+      "updated_at": "2024-01-23T19:00:00Z",
+      "published_at": "2024-01-23T19:00:00Z"
+    }
+  }
+] 

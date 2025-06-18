@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coptic Social Network - Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { backdrop-filter: blur(16px); background: rgba(255, 255, 255, 0.1); }
+        .spiritual-bg { background: linear-gradient(135deg, #f4ca56 0%, #e6b84a 100%); }
+        .gradient-text { background: linear-gradient(135deg, #f4ca56, #e6b84a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Modern Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-white/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold gradient-text">⛪ Coptic Social</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
+                    <a href="#community" class="text-gray-600 hover:text-gray-900 transition-colors">Community</a>
+                    <a href="#parishes" class="text-gray-600 hover:text-gray-900 transition-colors">Parishes</a>
+                    <button class="px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors">Sign In</button>
+                    <button class="px-6 py-2 spiritual-bg text-white rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        Join Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modern Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.1\'%3E%3Ccircle cx=\'30\' cy=\'30\' r=\'2\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="animate-fade-in">
+                    <div class="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-yellow-500/20 text-yellow-300 border border-yellow-500/30 mb-6">
+                        ✨ Trusted by 15,000+ Members
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Connect with the
+                        <span class="text-yellow-400"> Global Coptic</span>
+                        <br />Community
+                    </h1>
+                    <p class="text-xl text-slate-300 mb-8 leading-relaxed max-w-2xl">
+                        Join thousands of Coptic Orthodox Christians worldwide. Share your faith journey, 
+                        connect with your parish, and strengthen your spiritual community.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <button class="spiritual-bg text-white px-8 py-4 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                            🙏 Join Our Community
+                        </button>
+                        <button class="border-2 border-slate-300 text-slate-300 hover:bg-slate-300 hover:text-slate-900 px-8 py-4 rounded-lg text-lg font-medium transition-all">
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 text-slate-200">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-2xl">👥</span>
+                            <div>
+                                <div class="font-semibold text-white">15,000+</div>
+                                <div class="text-sm">Members</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-2xl">⛪</span>
+                            <div>
+                                <div class="font-semibold text-white">200+</div>
+                                <div class="text-sm">Parishes</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-2xl">🌍</span>
+                            <div>
+                                <div class="font-semibold text-white">50+</div>
+                                <div class="text-sm">Countries</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modern Testimonial Card -->
+                <div class="relative">
+                    <div class="relative z-10 glass rounded-2xl p-6 border border-white/20 hover:shadow-2xl transition-all duration-500 transform hover:-rotate-1">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-12 h-12 spiritual-bg rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                                M
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white">Mark Samir</h3>
+                                <p class="text-slate-300 text-sm">St. Mary Parish, Los Angeles</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-200 mb-6 leading-relaxed">
+                            "Coptic Social has transformed how our parish connects. From organizing youth retreats 
+                            to sharing prayer requests, it's brought our community closer together. 🙏"
+                        </p>
+                        <div class="flex items-center space-x-2">
+                            <div class="flex text-yellow-500">
+                                ★★★★★
+                            </div>
+                            <span class="text-slate-300 text-sm">5.0 • 2,847 reviews</span>
+                        </div>
+                    </div>
+                    <div class="absolute top-4 left-4 w-full h-full bg-yellow-500/10 rounded-2xl blur-sm"></div>
+                    <div class="absolute top-8 left-8 w-full h-full bg-slate-400/5 rounded-2xl blur-md"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Features Section -->
+    <section id="features" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium bg-yellow-500/10 text-yellow-700 border border-yellow-500/20 mb-4">
+                    Built for Faith Communities
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                    Everything You Need for Spiritual Community
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Built specifically for the Coptic Orthodox Church, with features that respect our traditions 
+                    while embracing modern technology.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-3xl text-white">👥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Community Groups</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Join ministries, Bible study groups, youth organizations, and prayer circles. 
+                        Connect with like-minded believers in your parish and beyond.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Youth & Young Adult Ministries</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Bible Study & Prayer Groups</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Service & Outreach Teams</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                    <div class="w-16 h-16 spiritual-bg rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-3xl text-white">📱</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Social Feed</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Share spiritual insights, prayer requests, and community updates. 
+                        Stay connected with your faith community through meaningful interactions.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Spiritual Reactions (❤️ 🙏 ✝️)</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Prayer Request System</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Community Announcements</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <span class="text-3xl text-white">⛪</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Parish Connection</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Connect with your local parish, access service schedules, and participate 
+                        in community events and activities.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Service Schedules & Events</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Parish Directory</span>
+                        </li>
+                        <li class="flex items-center space-x-2 text-sm text-gray-600">
+                            <div class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></div>
+                            <span>Community Calendar</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                Ready to Join Our Community?
+            </h2>
+            <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                Connect with Coptic Orthodox Christians worldwide and strengthen your faith journey.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="spiritual-bg text-white px-8 py-4 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                    Get Started Today
+                </button>
+                <button class="border-2 border-slate-300 text-slate-300 hover:bg-slate-300 hover:text-slate-900 px-8 py-4 rounded-lg text-lg font-medium transition-all">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="text-2xl font-bold gradient-text mb-4">⛪ Coptic Social</div>
+                <p class="text-gray-400 mb-8">Connecting the Global Coptic Orthodox Community</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Support</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-700 text-gray-500 text-sm">
+                    © 2025 Coptic Social Network. Built with ❤️ for the Coptic Orthodox Community.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
