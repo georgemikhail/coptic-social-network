@@ -1,6 +1,60 @@
 # 🏛️ Coptic Social Network
 
-A comprehensive social networking platform designed specifically for the global Coptic Orthodox Christian community.
+A modern community platform built with Django + Next.js, designed to connect and empower the Coptic community worldwide.
+
+## 🚀 Quick Deploy
+
+### Backend (Railway)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/TqWoGm?referralCode=coptic-social)
+
+### Frontend (Vercel)
+**Already deployed:** https://frontend-silk-five-31.vercel.app
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 12.3.4, React 18, Tailwind CSS
+- **Backend:** Django 4.2, PostgreSQL, Django REST Framework
+- **Deployment:** Vercel (Frontend), Railway (Backend)
+- **Authentication:** JWT, Social Auth ready
+- **Database:** PostgreSQL with production-ready schema
+
+## 📋 Manual Railway Deployment
+
+If the one-click deploy doesn't work:
+
+1. **Go to:** https://railway.app
+2. **Login** with GitHub
+3. **New Project** → "Deploy from GitHub repo"
+4. **Select:** `georgemikhail/coptic-social-network`
+5. **Set Root Directory:** `backend`
+6. **Add PostgreSQL Database**
+7. **Set Environment Variables:**
+   ```
+   DJANGO_SECRET_KEY=02BWyzrbF+fNFziAfsig97Fi3mTaDTjFAysgv8V8ey6SmYwtWy7FKaJT0cDb4eRB
+   DEBUG=False
+   FRONTEND_URL=https://frontend-silk-five-31.vercel.app
+   ALLOWED_HOSTS=.railway.app
+   ```
+
+## 🌐 Live URLs
+
+- **Frontend:** https://frontend-silk-five-31.vercel.app
+- **Backend:** Will be available after Railway deployment
+- **API Docs:** `https://your-backend-url/api/docs/`
+- **Health Check:** `https://your-backend-url/health/`
+
+## 🔧 Configuration Files
+
+All deployment files are included:
+- ✅ `railway.json` - Railway configuration
+- ✅ `nixpacks.toml` - Build optimization
+- ✅ `Procfile` - Process commands
+- ✅ `requirements.txt` - Python dependencies
+- ✅ Production Django settings
+
+## 📖 Full Documentation
+
+See `RAILWAY_DEPLOYMENT_GUIDE.md` for detailed instructions.
 
 ## 🎉 Current Status: Phase 3 COMPLETE
 
