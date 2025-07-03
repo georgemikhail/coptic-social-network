@@ -7,11 +7,7 @@
     "NEXTAUTH_URL": "https://coptic-social.vercel.app",
     "BACKEND_URL": "https://your-backend-domain.com"
   },
-  "functions": {
-    "pages/api/**/*.js": {
-      "runtime": "@vercel/node"
-    }
-  },
+
   "headers": [
     {
       "source": "/(.*)",
